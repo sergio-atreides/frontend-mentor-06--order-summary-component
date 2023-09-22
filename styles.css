@@ -1,0 +1,118 @@
+* {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--pale-blue);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 350px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px var(--dark-blue);
+}
+.hero {
+    width: 100%;
+}
+.title {
+    margin: 35px 0 0 0;
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.paragraph {
+    width: 80%;
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-size: 1em;
+}
+.plan {
+    margin: 10px;
+    background-color: var(--very-pale-blue);
+    display: grid;
+    grid-template-columns: 90px repeat(2,auto);
+    grid-template-rows: auto;
+    border-radius: 10px;
+    width: 80%;
+    align-items: center;
+}
+.plan--icon {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.plan-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+}
+.plan-price--period,
+.plan-price--price,
+.plan-link {
+    font-size: .9em;
+    margin: 0;
+}
+.plan-price--period {
+    font-weight: 900;
+}
+.plan-price--price {
+    margin-top: 5px;
+    
+}
+.plan-link {
+    font-weight: 700;
+    margin-right: 25px;
+    justify-self: right;
+}
+.btn {
+    background-color: var(--bright-blue);
+    color: white;
+    
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    padding: 20px;
+    margin-top: 25px;
+}
+.cancel-link {
+    font-size: .9em;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    margin: 20px 0 40px 0;
+}
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    font-size: 13px; 
+    width: 100%;
+    color: var(--white);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
